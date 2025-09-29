@@ -78,6 +78,10 @@ const execute = async () => {
             <meta charset="utf-8">
             <title>Borderlands 3 Achievements</title>
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link rel="icon" type="image/x-icon" href="./BL4_Vault_Favicon_16x16_Dark-01.svg" />
+            <meta name="description" content="Borderlands 3 Achievements Tracker">
+            <meta name="author" content="Negrii">
+            <meta name="keywords" content="Borderlands 3, Achievements, Tracker">
             <link rel="stylesheet" href="./main.css"/>
 			<script src="./main.js" defer></script>
             </head>
