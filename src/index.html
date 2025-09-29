@@ -1,0 +1,2064 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Borderlands 3 Achievements</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./main.css" />
+        <script src="./main.js" defer></script>
+    </head>
+
+    <body>
+        <h1>Borderlands 3 Achievements Tracker</h1>
+        <div class="controls">
+            <button id="hide-checked">Hide Completed</button>
+            <button id="show-all">Show All</button>
+            <button id="reset">Reset All</button>
+        </div>
+        <p>
+            Logros totales:
+            <span id="total-achievements-completed">0</span>/<span
+                id="total-achievements"
+                >0</span
+            >
+        </p>
+        <table class="borderlands sortable">
+            <caption id="Borderlands 3">
+                Borderlands 3 -
+                <span class="completed-count">0</span
+                >/<span class="total-count">45</span>
+            </caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Icon</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Ultimate Vault Hunter"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/2/26/BL3-Ultimate_Vault_Hunter.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Ultimate Vault Hunter</td>
+                    <td>Unlock all Borderlands® 3 Trophies.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="You Got Skills"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/e/eb/BL3-You_Got_Skills.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>You Got Skills</td>
+                    <td>Reach Level 2</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Star Bound"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/1/18/BL3-Star_Bound.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Star Bound</td>
+                    <td>Reach level 10.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Vaulting Your Way To The Top"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/4/4f/BL3-Vaulting_Your_Way_To_The_Top.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Vaulting Your Way To The Top</td>
+                    <td>Reach level 25.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Biggest Badass In The Borderlands"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/9/94/BL3-Biggest_Badass_In_The_Borderlands.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Biggest Badass In The Borderlands</td>
+                    <td>Reach level 50.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Bolt-Ons"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/d/d4/BL3-Bolt-Ons.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Bolt-Ons</td>
+                    <td>Unlock 10 Character Heads or Skins.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Mechani-Cool"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/b/b6/BL3-Mechani-Cool.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Mechani-Cool</td>
+                    <td>Unlock 10 Vehicle Parts via hijacking.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Tips Appreciated"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/d/d4/BL3-Tips_Appreciated.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Tips Appreciated</td>
+                    <td>
+                        Tip
+                        <a href="/wiki/Moxxi" class="mw-disambig" title="Moxxi"
+                            >Moxxi</a
+                        >.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="I Hope You Didn't Tea-bag"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/2/23/BL3-I_Hope_You_Didn%27t_Tea-bag.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>I Hope You Didn't Tea-bag</td>
+                    <td>Win a duel.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Stay Away From The Light"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/1/1f/BL3-Stay_Away_From_The_Light.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Stay Away From The Light</td>
+                    <td>Revive another player.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Gun Pals!"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/6/6b/BL3-Gun_Pals%21.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Gun Pals!</td>
+                    <td>Send an item to a friend.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Dropping Loads"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/d/d4/BL3-Dropping_Loads.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Dropping Loads</td>
+                    <td>Win a live grenade at a Slot Machine.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Good Against Remotes Is One Thing"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/1/11/BL3-Good_Against_Remotes_Is_One_Thing.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Good Against Remotes Is One Thing</td>
+                    <td>
+                        Get a perfect score at the Firing Range on any
+                        difficulty.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="My Name Is Earl"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/4/4a/BL3-My_Name_Is_Earl.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>My Name Is Earl</td>
+                    <td>
+                        Buy 20 cosmetic items from
+                        <a href="/wiki/Crazy_Earl" title="Crazy Earl"
+                            >Crazy Earl</a
+                        >.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Tales From The Eridian Slab"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/4/49/BL3-Tales_From_The_Eridian_Slab.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Tales From The Eridian Slab</td>
+                    <td>
+                        Decipher all of the
+                        <a
+                            href="/wiki/Eridian_Slab"
+                            class="mw-redirect"
+                            title="Eridian Slab"
+                            >Eridian Slabs</a
+                        >.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Slaughterhouse 3"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/b/b2/BL3-Slaughterhouse_3.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Slaughterhouse 3</td>
+                    <td>
+                        Complete all the
+                        <span
+                            class="new"
+                            title="Circles of Slaughter (page does not exist)"
+                            data-uncrawlable-url="L3dpa2kvQ2lyY2xlc19vZl9TbGF1Z2h0ZXI/YWN0aW9uPWVkaXQmcmVkbGluaz0x"
+                            >Circles of Slaughter</span
+                        >.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="A Hundred Names For Sand"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/0/03/BL3-A_Hundred_Names_For_Sand.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>A Hundred Names For Sand</td>
+                    <td>
+                        Discover all named locations on
+                        <a href="/wiki/Pandora" title="Pandora">Pandora</a>.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Swamped"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/7/7a/BL3-Swamped.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Swamped</td>
+                    <td>
+                        Discover all named locations on
+                        <a href="/wiki/Eden-6" title="Eden-6">Eden-6</a>.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="City Slicker"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/6/65/BL3-City_Slicker.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>City Slicker</td>
+                    <td>
+                        Discover all named locations on
+                        <a href="/wiki/Promethea" title="Promethea">Promethea</a
+                        >.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Exoarchaeolo—You Get the Gist"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/1/1e/BL3-Exoarchaeolo%E2%80%94You_Get_the_Gist.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Exoarchaeolo—You Get the Gist</td>
+                    <td>
+                        Discover all named locations on
+                        <a href="/wiki/Nekrotafeyo" title="Nekrotafeyo"
+                            >Nekrotafeyo</a
+                        >.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Master Of All You Survey"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/7/79/BL3-Master_Of_All_You_Survey.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Master Of All You Survey</td>
+                    <td>Discover all named locations.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="À La Carte"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/8/81/BL3-%C3%80_La_Carte.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>À La Carte</td>
+                    <td>Complete 20 Side Missions.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Getting A Little On The Side"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/4/47/BL3-Getting_A_Little_On_The_Side.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Getting A Little On The Side</td>
+                    <td>Complete all Side Missions.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="100 Proof"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/7/76/BL3-100_Proof.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>100 Proof</td>
+                    <td>
+                        Clear all the
+                        <span
+                            class="new"
+                            title="Eridian Proving Grounds (page does not exist)"
+                            data-uncrawlable-url="L3dpa2kvRXJpZGlhbl9Qcm92aW5nX0dyb3VuZHM/YWN0aW9uPWVkaXQmcmVkbGluaz0x"
+                            >Eridian Proving Grounds</span
+                        >.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Got Big Game"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/4/48/BL3-Got_Big_Game.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Got Big Game</td>
+                    <td>
+                        Defeat all of
+                        <a
+                            href="/wiki/Hammerlock%27s_Legendary_Hunts"
+                            title="Hammerlock's Legendary Hunts"
+                            >Hammerlock's Legendary Hunts</a
+                        >.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Zer0ed In"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/c/c0/BL3-Zer0ed_In.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Zer0ed In</td>
+                    <td>
+                        Defeat all of
+                        <span
+                            class="new"
+                            title="Zer0's Targets of Opportunity (page does not exist)"
+                            data-uncrawlable-url="L3dpa2kvWmVyMCUyN3NfVGFyZ2V0c19vZl9PcHBvcnR1bml0eT9hY3Rpb249ZWRpdCZyZWRsaW5rPTE="
+                            >Zer0's Targets of Opportunity</span
+                        >.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Barreled Right Over Them"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/0/00/BL3-Barreled_Right_Over_Them.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Barreled Right Over Them</td>
+                    <td>Kill an enemy with an exploding barrel.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Feelin' A Little Stabby"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/4/4c/BL3-Feelin%27_A_Little_Stabby.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Feelin' A Little Stabby</td>
+                    <td>Kill an enemy, knifing them with a gun blade.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Stick It To 'Em"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/b/b3/BL3-Stick_It_To_%27Em.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Stick It To 'Em</td>
+                    <td>
+                        Kill two or more enemies with a single sticky grenade.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="On Fleek"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/d/d3/BL3-On_Fleek.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>On Fleek</td>
+                    <td>Equip purple-rarity gear or better in every slot.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Rewards Card"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/e/e1/BL3-Rewards_Card.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Rewards Card</td>
+                    <td>
+                        Earn a Loyalty Package from each weapon manufacturer.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Welcome to the Crimson Raiders"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/5/57/BL3-Welcome_to_the_Crimson_Raiders.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Welcome to the Crimson Raiders</td>
+                    <td>
+                        Complete mission "<a
+                            href="/wiki/Children_of_the_Vault_(mission)"
+                            title="Children of the Vault (mission)"
+                            >Children of the Vault</a
+                        >".
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="So Long, Pandora!"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/9/9f/BL3-So_Long%2C_Pandora%21.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>So Long, Pandora!</td>
+                    <td>
+                        Complete mission "<a
+                            href="/wiki/Taking_Flight"
+                            title="Taking Flight"
+                            >Taking Flight</a
+                        >".
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="NOG It Off"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/f/ff/BL3-NOG_It_Off.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>NOG It Off</td>
+                    <td>
+                        Complete mission "<a
+                            href="/wiki/Hostile_Takeover"
+                            title="Hostile Takeover"
+                            >Hostile Takeover</a
+                        >".
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="I Mustache You A Question"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/b/b0/BL3-I_Mustache_You_A_Question.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>I Mustache You A Question</td>
+                    <td>
+                        Complete mission "<a
+                            href="/wiki/Atlas,_At_Last"
+                            title="Atlas, At Last"
+                            >Atlas, At Last</a
+                        >".
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Gone From My Sight"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/a/a9/BL3-Gone_From_My_Sight.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Gone From My Sight</td>
+                    <td>
+                        Complete mission "<a
+                            href="/wiki/Beneath_the_Meridian"
+                            title="Beneath the Meridian"
+                            >Beneath the Meridian</a
+                        >".
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="That Was Cold"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/5/58/BL3-That_Was_Cold.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>That Was Cold</td>
+                    <td>
+                        Complete mission "<a
+                            href="/wiki/Lair_of_the_Harpy"
+                            title="Lair of the Harpy"
+                            >Lair of the Harpy</a
+                        >".
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Heir To An Empty Castle"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/c/c5/BL3-Heir_To_An_Empty_Castle.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Heir To An Empty Castle</td>
+                    <td>
+                        Complete mission "<a
+                            href="/wiki/Cold_as_the_Grave"
+                            title="Cold as the Grave"
+                            >Cold as the Grave</a
+                        >".
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Cross The Streamers"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/e/ef/BL3-Cross_The_Streamers.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Cross The Streamers</td>
+                    <td>
+                        Complete mission "<a
+                            href="/wiki/Blood_Drive"
+                            title="Blood Drive"
+                            >Blood Drive</a
+                        >".
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Apocalypso!"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/f/fa/BL3-Apocalypso%21.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Apocalypso!</td>
+                    <td>
+                        Complete mission "<a
+                            href="/wiki/The_Great_Vault"
+                            title="The Great Vault"
+                            >The Great Vault</a
+                        >".
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="I Am A Goddess, A Glorious Female Warrior"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/0/02/BL3-I_Am_A_Goddess%2C_A_Glorious_Female_Warrior.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>I Am A Goddess, A Glorious Female Warrior</td>
+                    <td>
+                        Complete mission "<a
+                            href="/wiki/In_the_Shadow_of_Starlight"
+                            title="In the Shadow of Starlight"
+                            >In the Shadow of Starlight</a
+                        >".
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Bye, Felicia!"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/9/96/BL3-Bye%2C_Felicia%21.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Bye, Felicia!</td>
+                    <td>
+                        Complete mission "<a
+                            href="/wiki/Divine_Retribution"
+                            title="Divine Retribution"
+                            >Divine Retribution</a
+                        >".
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Florida Man"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/4/45/BL3-Florida_Man.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Florida Man</td>
+                    <td>Down yourself by grenade or explosion.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Stay Golden"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/3/30/BL3-Stay_Golden.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Stay Golden</td>
+                    <td>
+                        Use a
+                        <a href="/wiki/Golden_Key" title="Golden Key"
+                            >Golden Key</a
+                        >.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Damn, Gina"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/9/98/BL3-Damn_Gina.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Damn, Gina</td>
+                    <td>Obtain all Vault Rewards.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="borderlands sortable">
+            <caption id="Moxxi's Heist of the Handsome Jackpot">
+                Moxxi's Heist of the Handsome Jackpot -
+                <span class="completed-count">0</span
+                >/<span class="total-count">7</span>
+            </caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Icon</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="A Proper Hand-Off"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/f/f4/BL3_-_A_Proper_Hand-Off.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>A Proper Hand-Off</td>
+                    <td>
+                        Complete mission "<a
+                            href="/wiki/All_Bets_Off"
+                            title="All Bets Off"
+                            >All Bets Off</a
+                        >".<br /><i>(story mission, cannot be missed)</i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Firebug"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/9/99/BL3_-_Firebug.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Firebug</td>
+                    <td>
+                        Sabotage all statues for
+                        <a href="/wiki/Ember" title="Ember">Ember</a>.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Killer Look"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/5/51/BL3_-_Killer_Look.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Killer Look</td>
+                    <td>
+                        Complete the
+                        <a href="/wiki/Mayor" title="Mayor">Mayor</a>'s outfit.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Scovillain"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/6/6f/BL3_-_Scovillain.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Scovillain</td>
+                    <td>
+                        Destroy all of
+                        <a href="/wiki/Mr._Torgue" title="Mr. Torgue"
+                            >Mr. Torgue</a
+                        >'s hot sauces.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Shoe Money Tonight"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/c/c0/BL3_-_Shoe_Money_Tonight.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Shoe Money Tonight</td>
+                    <td>Get a 21 in the blackjack minigame.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Don't Be a Stranger"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/d/de/BL3_-_Don%27t_Be_A_Stranger.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Don't Be a Stranger</td>
+                    <td>
+                        Return for a chat with the
+                        <a href="/wiki/Clapstructor" title="Clapstructor"
+                            >Clapstructor</a
+                        >.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Who Collects The Collector?"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/8/88/BL3_-_Who_Collects_The_Collector.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Who Collects The Collector?</td>
+                    <td>
+                        Defeat the wandering
+                        <a
+                            href="/wiki/The_Debt_Collector"
+                            title="The Debt Collector"
+                            >Debt Collector</a
+                        >.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="borderlands sortable">
+            <caption id="Guns, Love, and Tentacles">
+                Guns, Love, and Tentacles -
+                <span class="completed-count">0</span
+                >/<span class="total-count">8</span>
+            </caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Icon</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Party's Still On!"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/b/bb/BL3_-_Party%27s_Still_On.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Party's Still On!</td>
+                    <td>
+                        Find the party.<br /><i
+                            >(story mission, cannot be missed)</i
+                        >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Love is the Fifth Dimension"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/1/10/BL3_-_Love_is_the_Fifth_Dimension.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Love is the Fifth Dimension</td>
+                    <td>
+                        Marry
+                        <a
+                            href="/wiki/Wainwright_Jakobs"
+                            title="Wainwright Jakobs"
+                            >your</a
+                        >
+                        <a href="/wiki/Sir_Hammerlock" title="Sir Hammerlock"
+                            >friends</a
+                        >.<br /><i>(story mission, cannot be missed)</i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Older Than the Trees"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/3/32/BL3_-_Older_Than_the_Trees.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Older Than the Trees</td>
+                    <td>
+                        Kill the
+                        <a href="/wiki/Wendigo" title="Wendigo">Wendigo</a
+                        >.<br /><i>(story mission, cannot be missed)</i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Good One, Babe"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/4/45/BL3_-_Good_One%2C_Babe.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>
+                        <a href="/wiki/Good_One,_Babe" title="Good One, Babe"
+                            >Good One, Babe</a
+                        >
+                    </td>
+                    <td>
+                        Watch
+                        <a href="/wiki/Deathtrap" title="Deathtrap"
+                            >Deathtrap</a
+                        >
+                        kill 50 enemies.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Industrious in the Face of Cosmic Terror"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/6/60/BL3_-_Industrious_in_the_Face_of_Cosmic_Terror.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Industrious in the Face of Cosmic Terror</td>
+                    <td>
+                        Complete all Crew Challenges and Side Missions on
+                        <a href="/wiki/Xylourgos" title="Xylourgos">Xylourgos</a
+                        >.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Whispers on the Wind"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/5/5e/BL3_-_Whispers_on_the_Wind.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Whispers on the Wind</td>
+                    <td>Collect all ECHO logs on Xylourgos.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="A Hunter, Through and Through"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/e/e5/BL3_-_A_Hunter%2C_Through_and_Through.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>
+                        <a
+                            href="/wiki/A_Hunter,_Through_and_Through"
+                            title="A Hunter, Through and Through"
+                            >A Hunter, Through and Through</a
+                        >
+                    </td>
+                    <td>Find and kill all 4 rare spawns.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="I'm Floundering Up Here"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/5/5f/BL3_-_I%27m_Floundering_Up_Here.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>
+                        <a
+                            href="/wiki/I%27m_Floundering_Up_Here"
+                            title="I'm Floundering Up Here"
+                            >I'm Floundering Up Here</a
+                        >
+                    </td>
+                    <td>Listen to 25 fish jokes.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="borderlands sortable">
+            <caption id="Bounty of Blood">
+                Bounty of Blood -
+                <span class="completed-count">0</span
+                >/<span class="total-count">8</span>
+            </caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Icon</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="How The West Was Done"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/f/fe/BL3_How_The_West_Was_Done_Icon.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>How The West Was Done</td>
+                    <td>
+                        Complete all plot missions, side missions, and crew
+                        challenges on
+                        <a href="/wiki/Gehenna" title="Gehenna">Gehenna</a>.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="That's Quite Challenging"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/c/cb/BL3_That%27s_Quite_Challenging_Icon.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>That's Quite Challenging</td>
+                    <td>Complete all crew challenges on Gehenna.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Helpful Hunter"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/d/df/BL3_Helpful_Hunter_Icon.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Helpful Hunter</td>
+                    <td>Complete all side missions on Gehenna.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Stone Cold Killer"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/3/32/BL3_Stone_Cold_Killer_Icon.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Stone Cold Killer</td>
+                    <td>
+                        Complete mission "<a
+                            href="/wiki/Blood_From_A_Stone"
+                            title="Blood From A Stone"
+                            >Blood From A Stone</a
+                        >".<br /><i>(story mission, cannot be missed)</i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="It's A Wash"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/6/67/BL3_It%27s_A_Wash_Icon.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>It's A Wash</td>
+                    <td>
+                        Complete mission "<a
+                            href="/wiki/The_Name_of_the_Law"
+                            title="The Name of the Law"
+                            >The Name of the Law</a
+                        >".<br /><i>(story mission, cannot be missed)</i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Getting Off Track"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/4/44/BL3_Getting_Off_Track_Icon.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Getting Off Track</td>
+                    <td>
+                        Complete mission "<a
+                            href="/wiki/Off_the_Rails"
+                            title="Off the Rails"
+                            >Off the Rails</a
+                        >".<br /><i>(story mission, cannot be missed)</i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Bounty: Hunted"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/f/f9/BL3_Bounty_Hunted_Icon.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Bounty: Hunted</td>
+                    <td>
+                        Complete mission "<a
+                            href="/wiki/Where_It_All_Started"
+                            title="Where It All Started"
+                            >Where It All Started</a
+                        >".<br /><i>(story mission, cannot be missed)</i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Ruin On The Horizon"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/c/cf/BL3_Ruin_On_The_Horizon_Icon.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Ruin On The Horizon</td>
+                    <td>
+                        Complete mission "<a
+                            href="/wiki/Riding_to_Ruin"
+                            title="Riding to Ruin"
+                            >Riding to Ruin</a
+                        >".<br /><i>(story mission, cannot be missed)</i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="borderlands sortable">
+            <caption id="Psycho Krieg and the Fantastic Fustercluck">
+                Psycho Krieg and the Fantastic Fustercluck -
+                <span class="completed-count">0</span
+                >/<span class="total-count">7</span>
+            </caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Icon</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Meat and Greet"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/5/53/BL3_Meat_and_Greet_Icon.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Meat and Greet</td>
+                    <td>
+                        Complete mission "<a
+                            href="/wiki/Enter_the_Psychoscape"
+                            title="Enter the Psychoscape"
+                            >Enter the Psychoscape</a
+                        >".<br /><i>(story mission, cannot be missed)</i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="The Blast and the Furious"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/7/72/BL3_The_Blast_and_the_Furious_Icon.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>The Blast and the Furious</td>
+                    <td>
+                        Defeat
+                        <a href="/wiki/Evil_Lilith" title="Evil Lilith"
+                            >Evil Lilith</a
+                        >.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Brain Pain Train Slain"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/7/70/BL3_Brain_Pain_Train_Slain_Icon.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Brain Pain Train Slain</td>
+                    <td>
+                        Defeat
+                        <a href="/wiki/Locom%C3%B6bius" title="Locomöbius"
+                            >Locomöbius</a
+                        >.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Trauma Center"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/8/8d/BL3_Trauma_Center_Icon.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Trauma Center</td>
+                    <td>
+                        Defeat
+                        <a href="/wiki/Dr._Benedict" title="Dr. Benedict"
+                            >Dr. Benedict</a
+                        >.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Red Wrath and Beyond"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/a/aa/BL3_Red_Wrath_and_Beyond_Icon.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Red Wrath and Beyond</td>
+                    <td>
+                        Defeat
+                        <a href="/wiki/Psychoreaver" title="Psychoreaver"
+                            >Psychoreaver</a
+                        >.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Ye Who Enter"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/4/4e/BL3_Ye_Who_Enter_Icon.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Ye Who Enter</td>
+                    <td>
+                        Open the gates to
+                        <a href="/wiki/Vaulthalla" title="Vaulthalla"
+                            >Vaulthalla</a
+                        >.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Fustercluck Off"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/a/a3/BL3_Fustercluck_Off_Icon.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Fustercluck Off</td>
+                    <td>
+                        Complete all side missions and crew challenges in
+                        Krieg's Mind.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="borderlands sortable">
+            <caption id="Designer's Cut">
+                Designer's Cut -
+                <span class="completed-count">0</span
+                >/<span class="total-count">3</span>
+            </caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Icon</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="In the Eye of a Murdercane"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/d/d1/BL3_In_the_Eye_of_a_Murdercane_Icon.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>In the Eye of a Murdercane</td>
+                    <td>Win a round of Arms Race.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Treat Yo Self"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/0/06/BL3_Treat_Yo_Self_Icon.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Treat Yo Self</td>
+                    <td>Extract 100 pieces of gear from Arms Race.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Complex Made Simple"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/6/61/BL3_Complex_Made_Simple_Icon.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Complex Made Simple</td>
+                    <td>Explore the entire Stormblind Complex.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="borderlands sortable">
+            <caption id="Director's Cut">
+                Director's Cut -
+                <span class="completed-count">0</span
+                >/<span class="total-count">3</span>
+            </caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Icon</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Demysteriouslierified"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/4/4f/BL3_Demysteriouslierified_Icon.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Demysteriouslierified</td>
+                    <td>
+                        Solve all murder mysteries for Ava's podcast.<br /><i
+                            >(story related, cannot be missed)</i
+                        >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Blood Sucking Freak"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/2/2d/BL3_Blood_Sucking_Freak_icon.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>Blood Sucking Freak</td>
+                    <td>Defeat Hemovorous the Invincible.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="checkbox"
+                            class="achievement-checkbox"
+                            data-achievement-id="Might Beyond Sight"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="https://static.wikia.nocookie.net/borderlands/images/6/60/BL3_MBS_Icon.png"
+                            decoding="async"
+                            width="64"
+                            height="64"
+                            class="mw-file-element"
+                        />
+                    </td>
+                    <td>
+                        <a
+                            href="/wiki/Might_Beyond_Sight"
+                            title="Might Beyond Sight"
+                            >Might Beyond Sight</a
+                        >
+                    </td>
+                    <td>Destroy 50 mysterious Eridium piles.</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

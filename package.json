@@ -1,0 +1,15 @@
+{
+  "name": "borderlands-3-achievements-tracker",
+  "version": "1.0.0",
+  "description": "Borderlands 3 Achievements Tracker",
+  "scripts": {
+    "scrap": "node src/scrap-tables.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "cheerio": "1.1.2"
+  }
+}
